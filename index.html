@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main || banner</title>
+    <style>
+        /* main */
+
+        .slide-1 {
+            background: linear-gradient(90deg, rgba(210, 195, 240, 0.2), rgba(19, 91, 158, 0.1)), url(img/slide1.jpg);
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 550px;
+            position: relative;
+        }
+
+        .slide-2 {
+            background: linear-gradient(90deg, rgba(210, 195, 240, 0.2), rgba(19, 91, 158, 0.1)), url(img/slide2.jpg);
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 550px;
+            position: relative;
+        }
+
+        .slide-caption-1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            text-align: center;
+        }
+
+        .slide-caption-1 p {
+            font-size: 1rem;
+        }
+
+        .main-slider .owl-dots {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    </style>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/8b6c44059c.js"></script>
+
+
+    <!-- owl-carousel css link -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <!-- owl-carousel js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- wow -->
+    <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <script src="cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <!-- Main page -->
+
+    <div class="main">
+        <div class="owl-carousel main-slider owl-theme">
+            <div class="slide-1">
+                <div class="slide-caption-1">
+                    <h1 class="wow animate__backInDown" style="animation-duration:2s; animation-delay:1s;">Custome Wide
+                        Body Kits</h1>
+                    <p>Lets us help you find what you need.</p>
+                </div>
+            </div>
+            <div class="slide-2">
+                <div class="slide-caption-1">
+                    <h1>Custome Wide Body Kits</h1>
+                    <p>Lets us help you find what you need.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        // main slider
+        $('.main-slider').owlCarousel({
+            loop: true,
+            autoplay: true,
+            responsiveClass: true,
+            dots: true,
+            margin: 10,
+            lazyLoad: true,
+            animateOut: 'fadeOut',
+            animateOut: 'slideOutDown',
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+        new WOW().init();
+    </script>
+
+
+</body>
+
+</html>
