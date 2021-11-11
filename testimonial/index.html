@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimoinal</title>
+    <style>
+        .testi-box {
+            width: 100%;
+            padding: 10px;
+            background: #0019fd;
+        }
+
+        .testi-pro {
+            width: 100px;
+            margin: 0 auto;
+        }
+
+        .testi-pro img {
+            width: 100%;
+            border-radius: 100%;
+        }
+
+        .box-body {
+            text-align: center;
+            margin-top: 10px;
+            color: #fff;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .owl-theme .custom-nav {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+        }
+
+        .owl-prev,
+        .owl-next {
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+            color: inherit;
+            background: none;
+            border: none;
+            font-size: 40px;
+            z-index: 100;
+        }
+
+        .owl-carousel .owl-nav button.owl-next,
+        .owl-carousel .owl-nav button.owl-prev,
+        .owl-carousel button.owl-dot {
+            font-size: 60px !important;
+        }
+
+        .owl-prev {
+            left: 0;
+        }
+
+        .owl-next {
+            right: 0;
+        }
+    </style>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/8b6c44059c.js"></script>
+
+
+    <!-- owl-carousel css link -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <!-- owl-carousel js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="testimonial-carousel owl-carousel owl-theme">
+            <div class="testi-box">
+                <div class="testi-pro">
+                    <img src="testimonial-1.png" alt="">
+                </div>
+                <div class="box-body">
+                    <h2>john David</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, dolorum beatae quisquam
+                        dolor quis impedit itaque! Neque, iure! Fuga, quisquam.</p>
+                </div>
+            </div>
+
+            <div class="testi-box">
+                <div class="testi-pro">
+                    <img src="testimonial-1.png" alt="">
+                </div>
+                <div class="box-body">
+                    <h2>john David</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, dolorum beatae quisquam
+                        dolor quis impedit itaque! Neque, iure! Fuga, quisquam.</p>
+                </div>
+            </div>
+
+            <div class="testi-box">
+                <div class="testi-pro">
+                    <img src="testimonial-1.png" alt="">
+                </div>
+                <div class="box-body">
+                    <h2>john David</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, dolorum beatae quisquam
+                        dolor quis impedit itaque! Neque, iure! Fuga, quisquam.</p>
+                </div>
+            </div>
+            <div class="testi-box">
+                <div class="testi-pro">
+                    <img src="testimonial-1.png" alt="">
+                </div>
+                <div class="box-body">
+                    <h2>john David</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, dolorum beatae quisquam
+                        dolor quis impedit itaque! Neque, iure! Fuga, quisquam.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $('.testimonial-carousel').owlCarousel({
+            loop: true,
+            autoplay: true,
+            responsiveClass: true,
+            dots: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
